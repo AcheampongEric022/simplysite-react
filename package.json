@@ -1,10 +1,13 @@
 {
+  "homepage": "https://AcheampongEric022.github.io/simplysite-react",
   "name": "educationsite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -12,6 +15,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "gh-pages": "^6.0.0",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {
